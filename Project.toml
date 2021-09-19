@@ -1,0 +1,14 @@
+name = "SipSynth"
+uuid = "c35db63e-da48-427b-82f3-01ffc5b8a550"
+authors = ["anand jain <anandj@uchicago.edu>"]
+version = "0.1.0"
+
+[deps]
+FileIO = "5789e2e9-d7fb-5bc7-8068-2c6fae9b9549"
+LibSndFile = "b13ce0c6-77b0-50c6-a2db-140568b8d1a5"
+MIDI = "f57c4921-e30c-5f49-b073-3f2f2ada663e"
+PortAudio = "80ea8bcb-4634-5cb3-8ee8-a132660d1d2d"
+RtMIDI = "003e8c73-c8da-4c88-ace0-65eb1d1f5d4f"
+SampledSignals = "bd7594eb-a658-542f-9e75-4c4d8908c167"
+libportaudio_jll = "2d7b7beb-0762-5160-978e-1ab83a1e8a31"
+libsndfile_jll = "5bf562c0-5a39-5b4f-b979-f64ac885830c"
