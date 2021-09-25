@@ -92,7 +92,7 @@ function _callback_async_loop(mystream, buf, cond, r_ecb; verbose=true)
 
         # verbose && @info msg, notes_on
         verbose && println(msg, notes_on, ss.freqs)
-        @async write(mystream, ss)
+        # @async write(mystream, ss)
         # wavplay(buf, SR)
         # @asyncwavplay(buf, SR)
     end
@@ -109,8 +109,8 @@ end
 schedule(cbloop)
 
 istaskdone(cbloop)
-# msg = UInt8[0x90, 0x25, 0x30]
-# handle_msg!(buf, ss, msg)
+msg = UInt8[0x90, 0x25, 0x30]
+handle_msg!(buf, ss, msg)
 
 # cond = false
 # flush(mystream)
